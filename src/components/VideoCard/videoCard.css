@@ -1,0 +1,71 @@
+.video-card_container,
+.thumbnail-container {
+  border-radius: 15px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+/* .video-card_container {
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.15);
+} */
+
+.thumbnail-container {
+  object-fit: contain;
+}
+
+.thumbnail-container img {
+  /* display: block; */
+  transition: all ease-in-out 0.2s;
+}
+
+.thumbnail-container img:hover {
+  transform: scale(1.1);
+}
+
+.details-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.channel-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #e7e0e0;
+}
+
+.channel-image p {
+  font-size: 20px;
+  text-align: center;
+  line-height: 0;
+}
+
+.video-details {
+  width: 260px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.video-details .video-title,
+.video-details .channel-name {
+  line-height: 0;
+  width: 100%;
+  margin-bottom: 2.5rem;
+}
+
+.video-details .video-title {
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+
+.video-details .channel-name {
+  font-size: 1.3rem;
+  /* font-weight: bold; */
+}
